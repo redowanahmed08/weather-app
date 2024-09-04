@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.weather-info {
+    margin-top: 20px;
+    color: white;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    input, button {
+        font-size: 18px;
+        padding: 12px 15px;
+    }
+}

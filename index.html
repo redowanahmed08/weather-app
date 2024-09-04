@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Redowan Ahmed Siyam">
+    <title>Weather App - Developed by Redowan</title>
+    <meta name="description" content="Realtime Weather Checking Web App ">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Realtime Weather Checking Web App">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Realtime Weather App">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Realtime Weather Checking Web App">
+    <meta property="og:image" content="/img/favicon.webp">
+
+    <link rel="shortcut icon" href="/img/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass">
+            <h1>Weather Checker</h1>
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Check Weather</button>
+            <div id="weatherInfo" class="weather-info">
+                <h2 id="cityName"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
